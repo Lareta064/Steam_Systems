@@ -1,0 +1,11 @@
+//- ===== colors ======
+
+
+
+$viewport: calc(100vw - 48px);
+
+@media (max-width: 767px) {
+	$viewport: calc(100vw - 32px);
+}
+
+$column-width: calc($viewport / 12);

@@ -1,0 +1,82 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+		style.
+			@font-face {
+				font-family: 'Montserrat';
+				src: url(./fonts/'Montserrat-Regular.woff2) format("woff2");
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url(./fonts/'Montserrat-Medium.woff2) format("woff2");
+				font-weight: 500;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url(./fonts/'Montserrat-SemiBold.woff2) format("woff2");
+				font-weight: 600;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url(./fonts/I'Montserrat-Bold.woff2) format("woff2");
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Кнопки
+
+				.container-dashboard__content
+					h3 Тег button
+					+btn('Button')
+					pre.
+						mixin btn-link(txt, type="button",  addCl)
+						+btn('Button')
+						+btn('Button')
+					hr
+					h3 Тег button тип submit
+					+btn('Button', 'submit')
+					pre.
+						mixin btn-link(txt, type="button",  addCl)
+						+btn('Button', 'submit')
+					hr
+					h3 Input type submit
+					+btn-input('Input type submit')
+					pre.
+						mixin btn-input(txt,  addCl)
+						+btn-input('Input type submit')
+					
+					h3 Ссылка 
+					+btn-link('Button')
+					pre.
+						mixin btn-link(txt, link="#!",  addCl)
+						+btn-link('Button')
+					hr
+					h3 Ссылка  с доп классом  'btn--slim'
+					+btn-link('Button', "index.html", 'btn--slim')
+					pre.
+						mixin btn-link(txt, link="#!",  addCl)
+						+btn-link('Button', "index.html", 'btn--slim')

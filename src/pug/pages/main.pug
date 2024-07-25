@@ -1,0 +1,14 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-wrapper
+		
+		include ../sections/_header
+		main.main
+			include ../sections/_main-hero
+		include ../sections/_footer
+		include ../blocks/_cooki-popup
+
+
+block variables
+	-var title = "Главная";

@@ -1,0 +1,77 @@
+include _mixins-links.pug
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		//====favicon ======
+		link(rel="apple-touch-icon", sizes="180x180", href="./img/favicon/apple-touch-icon.webp")
+		link(rel="icon", type="image/webp", sizes="32x32", href="./img/favicon/favicon-32x32.webp")
+		link(rel="icon", type="image/webp", sizes="16x16", href="./img/favicon/favicon-16x16.webp")
+		link(rel="manifest", href="./img/favicon/site.webmanifest")
+		link(rel="mask-icon", href="./img/favicon/safari-pinned-tab.svg", color="#5bbad5")
+		link(rel="shortcut icon", href="./img/favicon/favicon.ico")
+		meta(name="msapplication-TileColor", content="#da532c")
+		meta(name="msapplication-config", content="./img/favicon/browserconfig.xml")
+		meta(name="theme-color", content="#ffffff")
+		//====убрать перевод цифр в номер телефона на ios  ======
+		meta(name="format-detection" content="telephone=no")
+		
+		//======= swiper slider ======
+		link(rel="stylesheet", href="./libs/swiper/swiper.min.css")
+		
+		//============ fancybox =============
+		link(rel="stylesheet", href="./libs/fancybox/fancybox.css")
+		
+		//======= main styles ======
+		link(rel="stylesheet", href="./css/main.css")
+
+		title !{title}
+		style.
+			@font-face {
+				font-family: 'Montserrat';
+				src: url(./fonts/'Montserrat-Regular.woff2) format("woff2");
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url(./fonts/'Montserrat-Medium.woff2) format("woff2");
+				font-weight: 500;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url(./fonts/'Montserrat-SemiBold.woff2) format("woff2");
+				font-weight: 600;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url(./fonts/I'Montserrat-Bold.woff2) format("woff2");
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}
+				
+	body(class=(bodyCl !=="" ? bodyCl : ''))
+		
+		block content
+		
+		//=============== jquery ==================
+		script(src="./libs/jquery/jquery-3.0.0.min.js")
+		script(src="./libs/jquery.lazy.min.js")
+
+		
+		//=============== swiper js ===============
+		script(src="./libs/swiper/swiper.js")
+		//============fancybox====================
+		script(src="./libs/fancybox/fancybox.js")
+		//=============== main js ===================
+		script(src="./js/main.js")

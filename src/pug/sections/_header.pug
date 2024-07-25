@@ -1,0 +1,57 @@
+//====== HEADER=====
+header.header#header.header--special
+	include ../blocks/_header-search
+	.header-container.d-flex
+		//===LOGO====
+		.header-left-col
+			a(href="index.html").logo.logo--white
+				+svg-icon('logo')
+		//=== MENU WRAPPER =====
+		.header-menu-wrapper#menu
+			.header-menu
+				ul.menu-list.flx-center
+					li.menu-list-item.menu-item-submenu 
+						a(href="#!") Для мужчин
+						.menu-list-child.bx-sh
+							ul
+								li
+									a(href="#!") Коллекция Мужcкая Весна 2024
+								li
+									a(href="#!") Коллекция Мужcкая Лето 2024
+					li.menu-list-item.menu-item-submenu
+						a(href="#!") Для женщин
+						.menu-list-child.menu-list-child--right.bx-sh
+							ul
+								li
+									a(href="#!") Коллекция Женская Весна 2024
+								li
+									a(href="#!") Коллекция Женская Лето 2024
+					li.menu-list-item
+						a(href="stores.html") Где купить
+					//====пункт виден в мобильном меню
+					li.menu-list-item.d-none.d-md-block
+						a(href="#!") Оптовикам	
+				//====блок для моб версии ====
+				.header-menu-block.d-none.d-md-block
+					.social-block
+						a(href="#!")
+							img(src="./img/svg-social/vk2.svg" alt="vk")
+						a(href="#!")
+							img(src="./img/svg-social/vc2.svg" alt="vc")
+						a(href="#!")
+							img(src="./img/svg-social/dzen2.svg" alt="dzen")
+						a(href="#!")
+							img(src="./img/svg-social/tg2.svg" alt="tg")
+
+					p &copy;NorthBloom  1997 - 2024 г.
+		//=====right column====
+		.header-right-col
+			button.btn-toggle-search#search-btn
+				svg.svg-search
+					use(href='./img/sprite.svg#svg-search')
+			//====пункт виден на экранах от 1024 пикс ===
+			a(href="#!").link-item.d-inline.d-md-none Оптовикам
+			
+			//=====mobile menu-toggle===
+			button(type="button").menu-toggle#menu-toggle
+				span

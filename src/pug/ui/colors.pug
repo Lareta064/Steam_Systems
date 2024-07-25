@@ -1,0 +1,55 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Цветовая схема
+
+				.container-dashboard__content
+					ul.color-scheme
+						li
+							span.color-box(style="background-color:#3180dd;")
+							span.color-name --prime: #3180dd;
+						li
+							span.color-box(style="background-color:#333;")
+							span.color-name --black: #333;
+							
+						li
+							span.color-box(style="background-color:#fff;")
+							span.color-name --white: #fff;
+						li
+							span.color-box(style="background-color:#eff1f5;")
+							span.color-name --divider-colr: #eff1f5;
+						li
+							span.color-box(style="background-color:#f8f9fb;")
+							span.color-name --bg-collor: #f8f9fb;
+						li
+							span.color-box(style="background-color:#777;")
+							span.color-name --paragraph-color: #777;
+							
+						li
+							span.color-box(style="background-color:#60c339;")
+							span.color-name --green: #60c339;
+						li
+							span.color-box(style="background-color:#e9454d;")
+							span.color-name --reed: #e9454d;
+						li
+							span.color-box(style="background-color:#499f27;")
+							span.color-name --btnHover: #499f27;							
+						

@@ -1,0 +1,8 @@
+mixin btn(txt, type="button",  addCl)
+	button(type=""+ type class=(addCl ? 'btn '+addCl : 'btn')) #{txt}
+
+mixin btn-link(txt, link="#!",  addCl)
+	a(href=""+ link class=(addCl ? 'btn '+addCl : 'btn')) #{txt}
+
+mixin btn-input(txt,  addCl)
+	input(type="submit" class=(addCl ? 'btn '+addCl : 'btn') value=""+ txt)

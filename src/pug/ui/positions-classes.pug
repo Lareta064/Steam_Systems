@@ -1,0 +1,29 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Вспомогрательные классы
+
+				.container-dashboard__content
+				h3 bg-blue  - темный фоновый цвет 
+				h3 bg-grey  - светло-серый фоновый цвет
+				h3 .bx-sh   - тень блоку и отступы по 24 пикс
+				h3 .img-cover картинка по размерам родит блока
+				

@@ -1,0 +1,85 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+		style.
+			@font-face {
+				font-family: 'Inter';
+				src: url(../fonts/Inter-Regular.woff2) format("woff2");
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Inter';
+				src: url(../fonts/Inter-Medium.woff2) format("woff2");
+				font-weight: 500;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Inter';
+				src: url(../fonts/Inter-SemiBold.woff2) format("woff2");
+				font-weight: 600;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Inter';
+				src: url(../fonts/Inter-Bold.woff2) format("woff2");
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}			
+			@font-face {
+				font-family: 'SuisseIntl-Regular';
+				src: url(../fonts/SuisseIntl-Regular.woff2) format("woff2");
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Roboto Serif';
+				src: url(../fonts/RobotoSerif_SemiExpanded-Medium.woff2) format("woff2");
+				font-style: normal;
+				font-display: swap;
+			}
+			*[class^="col_"]{
+				height:50px;
+				background-color: pink;
+			}
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 grid
+				.content-grid
+					.col_1
+						h3 .col_1
+					.col_2
+						h3 .col_2
+					.col_3
+						h3 .col_3
+					.col_4
+						h3 .col_4
+					.col_2
+						h3 .col_2
+				<br>
+				.content-grid
+					.col_1
+						h3 .col_1
+					.col_5
+						h3 .col_5
+					.col_6
+						h3 .col_6

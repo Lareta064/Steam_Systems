@@ -1,0 +1,164 @@
+
+
+.d-block {
+	display: block !important;
+}
+
+.d-grid {
+	display: grid !important;
+}
+
+.d-flex {
+	display: flex !important;
+}
+
+.d-none {
+	display: none !important;
+}
+
+
+@media (max-width: 1439px) {
+
+	.d-xl-block {
+		display: block !important;
+	}
+
+	.d-xl-flex {
+		display: flex !important;
+	}
+	.d-xl-grid {
+		display: grid !important;
+	}
+	.d-xl-none {
+		display: none !important;
+	}
+
+
+}
+@media (max-width:1199px) {
+
+	.d-lg-block {
+		display: block !important;
+	}
+
+	.d-lg-flex {
+		display: flex !important;
+	}
+	.d-lg-grid {
+		display: grid !important;
+	}
+
+
+	.d-lg-none {
+		display: none !important;
+	}
+
+}
+@media (max-width: 1023px) {
+
+	.d-md-block {
+		display: block !important;
+	}
+
+	.d-md-grid {
+		display: grid !important;
+	}
+
+
+	.d-md-flex {
+		display: flex !important;
+	}
+
+	.d-md-none {
+		display: none !important;
+	}
+
+}
+@media (max-width: 767px) {
+
+	.d-sm-block {
+		display: block !important;
+	}
+	.d-sm-flex {
+		display: flex !important;
+	}
+	.d-sm-none {
+		display: none !important;
+	}
+	.pt-md-0{
+		padding-top: 0!important;
+	}
+}
+
+.offset-1{
+	margin-left: calc($column-width * 1)!important;
+}
+.content-grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 24px;
+	@media (max-width: 1919px) {
+		column-gap: 16px;
+	}
+	@media (max-width: 767px) {
+		column-gap: 8px;
+	}
+	.col-1 {
+		grid-column: span 1;
+		width: auto;
+	}
+	.col-2 {
+		grid-column: span 2;
+		width: auto;
+	}
+
+	.col-3{
+		grid-column: span 3;
+		width: auto;
+	}
+	.col-4 {
+		grid-column: span 4;
+		width: auto;
+	}
+	.col-5 {
+		grid-column: span 5;
+		width: auto;
+	}
+
+	.col-6 {
+		grid-column: span 6;
+		width: auto;
+	}
+
+	.col-7 {
+		grid-column: span 7;
+		width: auto;
+	}
+
+	.col-8 {
+		grid-column: span 8;
+		width: auto;
+	}
+
+	.col-9 {
+		grid-column: span 9;
+		width: auto;
+	}
+
+	.col-10 {
+		grid-column: span 10;
+		width: auto;
+	}
+
+	.col-11 {
+		grid-column: span 11;
+		width: auto;
+	}
+
+	.col-12 {
+		grid-column: span 12;
+		width: auto;
+	}
+
+}

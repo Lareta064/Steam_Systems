@@ -1,0 +1,70 @@
+include _mixins-links.pug
+
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		
+		
+		
+		//=======убрать перевод цифр в номер телефона на ios  и safari ======
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		
+		title !{title}
+		style.
+			@font-face {
+				font-family: 'Inter';
+				src: url(../fonts/Inter-Regular.woff2) format("woff2");
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Inter';
+				src: url(../fonts/Inter-Medium.woff2) format("woff2");
+				font-weight: 500;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Inter';
+				src: url(../fonts/Inter-SemiBold.woff2) format("woff2");
+				font-weight: 600;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Inter';
+				src: url(../fonts/Inter-Bold.woff2) format("woff2");
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}			
+			@font-face {
+				font-family: 'Suisse Intl';
+				src: url(../fonts/suisse-intl-regular.woff2) format("woff2");
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Roboto Serif';
+				src: url(../fonts/RobotoSerif_SemiExpanded-Medium.woff2) format("woff2");
+				font-style: normal;
+				font-display: swap;
+			}		
+	body(class=(bodyCl !=="" ? bodyCl : ''))
+		include ../ui/ui-navigation.pug
+		block content
+			
+		
+		//=============== jquery ===================
+		script(src="../libs/jquery/jquery-3.0.0.min.js")
+				
+		//=============== мои скрипты ===================
+		
+		script(src="../js/main.js")
