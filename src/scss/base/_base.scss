@@ -1,6 +1,7 @@
 :root {
 --prime: #3180dd;
 --black: #333;
+--grey:#4f4f4f;
 --white: #fff;
 --divider-colr: #eff1f5;
 --bg-collor: #f8f9fb;
@@ -32,10 +33,12 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 	font-family: var(--font-family);
 	-webkit-font-smoothing: antialiased;
+	color: var(--black);
+	line-height: 1.4;
 }
 body.lock{
 	height: 100vh;
