@@ -1,0 +1,72 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+		style.
+			@font-face {
+				font-family: 'Montserrat';
+				src: url('../fonts/Montserrat-Regular.woff2') format("woff2");
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url('../fonts/Montserrat-Medium.woff2') format("woff2");
+				font-weight: 500;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url('../fonts/Montserrat-SemiBold.woff2') format("woff2");
+				font-weight: 600;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Montserrat';
+				src: url('../fonts/Montserrat-Bold.woff2') format("woff2");
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}
+	body.body-dashboard
+
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Сравнение диагностики
+				.comparison-table
+					.table-row.table-row__header
+						.cell-name
+						.cell-our
+							p Диагностика<br>от “Паровых систем”
+						.cell-other
+							p Обычное обследование
+					+comparise-row('Оборудование', 'TRAPMAN® TM5', 'Тестеры конденсатоотводчиков других производителей')
+					+comparise-row('База данных', '3000 конденсатоотводчиков')
+					+comparise-row('Основание для выводов о работоспособности', 'Индивидуальные заводские характеристики конкретного конденсатоотводчика', 'Тип конденсатоотводчика без учёта индивидуальных характеристик')
+					+comparise-row2('Определение величины утечки', 'plus', 'minus')
+					+comparise-row2('Двойная маркировка конденсатоотводчиков', 'plus', 'minus')
+					+comparise-row2('Технический прогноз', 'plus', 'minus')
+
+					
+					.table-row
+						.cell-name
+							p Оборудование
+						.cell-our
+							p TRAPMAN® TM5
+						.cell-other
+							p Тестеры конденсатоотводчиков других производителей

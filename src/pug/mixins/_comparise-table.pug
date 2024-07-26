@@ -1,0 +1,25 @@
+mixin comparise-row(name, txt1, txt2, title1, title2)
+	.table-row
+		.cell-name
+			p !{name}
+		.cell-our
+			if title1
+				p #[strong !{title1}]
+			p !{txt1}
+			
+		.cell-other
+			if title2
+				p #[strong !{title2}]
+			if txt2
+				p !{txt2}
+
+mixin comparise-row2(name, svg1, svg2)
+	.table-row
+		.cell-name
+			p !{name}
+		.cell-our
+			span
+				+svg-icon-ui(svg1)
+		.cell-other
+			span
+				+svg-icon-ui(svg2)

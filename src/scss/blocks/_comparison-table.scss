@@ -1,0 +1,45 @@
+.comparison-table{
+	.table-row{
+		display: grid;
+		grid-template-columns: 20% 1fr 1fr;
+		min-height: 165px;
+		border-bottom: 1px solid var(--divider-colr);
+		border-top: 1px solid var(--divider-colr);
+		.cell-name, .cell-our, .cell-other{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 35px;
+			&>*{width: 100%;}
+			&>*+* {margin-top: 10px;}
+			span{text-align: center;}
+		}
+		.cell-name{
+			padding-left: 0; padding-right: 20px;
+			font-size: 18px;
+			line-height: 1.39;
+			color: var(--black);
+		}
+		.cell-our{
+			background: var(--prime);
+			color: var(--white);
+			svg[class^="svg-"]{color: white;}
+		}
+		.cell-other{
+			color: var(--paragraph-color);
+			background: var(--bg-collor);
+		}
+	}
+	.table-row.table-row__header{
+		border: 0;
+		
+		margin-bottom: 10px;
+		.cell-our,.cell-other{
+			font-size: 25px;
+			line-height: 1.28;
+			align-items: center;
+			text-align: center;
+		}
+			
+	}
+}
