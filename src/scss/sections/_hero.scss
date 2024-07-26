@@ -9,8 +9,13 @@
 	background-position: bottom right;
 	.h1{margin-bottom: 5px;}
 	.hero-title, .hero-desck {max-width: 486px; margin-bottom: 40px;}
-	.hero-desck{margin-bottom: 75px; max-width: 425px;}
-		
+	.hero-desck	{
+		margin-bottom: 75px; max-width: 425px;
+		font-size: 18px;
+		line-height: 1.4;
+		color: var(--paragraph-color);
+	}
+	.btn{max-width: 425px;}
 
 	@media (max-width: 1199px) {
 		min-height: 717px;
@@ -18,7 +23,12 @@
 		
 	}
 	@media (max-width: 767px) {
+		padding-top: 35px;
 		background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #fff 100%), url(../img/header-w375.webp);
+		.hero-desck{
+			margin-bottom: 50px;
+			font-size: 15px;
+		}
 	}
 	
 	
