@@ -1,0 +1,11 @@
+.benefit-item{
+	padding: 70px 35px;
+	background: #fff;
+	border: 1px solid var(--divider-colr);
+	min-height: 435px;
+	&>*+*{margin-top: 15px;}
+	&__text>*+*{margin-top: 15px;}
+	p:not(.title){
+		color: var(--paragraph-color);
+	}
+}

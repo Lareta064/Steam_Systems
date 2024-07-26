@@ -1,11 +1,19 @@
 //- ===== colors ======
 
 
-
-$viewport: calc(100vw - 48px);
-
+$contaierPaddingInline: 35px;
+@media (max-width: 1439px) {
+	$contaierPaddingInline: 20px;
+}
 @media (max-width: 767px) {
-	$viewport: calc(100vw - 32px);
+	$contaierPaddingInline: 10px;
+}
+$viewport: calc(100vw - $contaierPaddingInline*2);
+@media (max-width: 1439px) {
+	$viewport: calc(100vw - 40px);
+}
+@media (max-width: 767px) {
+	$viewport: calc(100vw - 20px);
 }
 
 $column-width: calc($viewport / 12);

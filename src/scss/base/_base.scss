@@ -114,3 +114,14 @@ input[type="submit"] {
 	padding: 0;
 	cursor: pointer;
 }
+.container{
+	width: min(1440px, 100%);
+	margin-inline: auto;
+	padding-inline: 35px;
+	@media (max-width: 1439px) {
+		padding-inline: 20px;
+	}
+	@media (max-width: 767px) {
+		padding-inline: 10px;
+	}
+}
