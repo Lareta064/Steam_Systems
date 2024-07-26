@@ -1,0 +1,17 @@
+mixin benefit-item(svgName, title, txt)
+	.benefit-item&attributes(attributes)
+		i.benefit-item__icon
+			+svg-icon-ui(svgName)
+		.benefit-item__text
+			p.title !{title}
+			p !{txt}
+
+mixin benefits-block(args)
+	.benefits-block
+		each item in args
+			.benefit-item
+				i.benefit-item__icon
+					+svg-icon-ui(item.svg)
+				.benefit-item__text
+					p.title !{item.title}
+					p !{item.txt}

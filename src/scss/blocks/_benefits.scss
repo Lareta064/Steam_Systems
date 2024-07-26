@@ -1,3 +1,7 @@
+.benefits-block{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
 .benefit-item{
 	padding: 70px 35px;
 	background: #fff;
@@ -7,5 +11,8 @@
 	&__text>*+*{margin-top: 15px;}
 	p:not(.title){
 		color: var(--paragraph-color);
+	}
+	@media (max-width: 767px) {
+		padding: 70px 20px;
 	}
 }
