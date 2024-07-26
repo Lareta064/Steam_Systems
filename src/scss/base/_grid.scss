@@ -12,10 +12,13 @@
 .offset-1 {
 	margin-left: calc($column-width * 1) !important;
 }
-.d-flex {
+.d-flex, .d-flex-center, .btn-center {
 	display: flex !important;
 }
-
+.d-flex-center, .btn-center{
+	justify-content: center;
+	align-items: center;
+}
 .d-none {
 	display: none !important;
 }

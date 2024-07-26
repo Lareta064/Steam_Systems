@@ -1,5 +1,5 @@
 $btnHeight: 50px;
-$brad: 18px;
+$brad: 5px;
 $padInline:22px;
 .btn, .btn[type="submit"]{
 	display: inline-flex;
@@ -23,12 +23,15 @@ $padInline:22px;
 	&.btn--slim{
 		height: 34px;
 		line-height: 34px;
-		padding-inline:5px;
+		padding-inline:18px;
 	}
 	&:hover{
 		background-color: var(--btnHover);
 	}
 	&:active, &:focus{
 		background-color: darken(#499f27, 7%);
+	}
+	@media (max-width: 767px) {
+	  width: 100%;
 	}
 }

@@ -429,7 +429,7 @@
 
 
 	<!--  -->
-	<symbol id="svg-minus" viewBox="0 0 24 24">
+	<symbol id="svg-minus" viewBox="0 0 40 40">
 		<g>
 			<path d="M8.33398 20.5005H31.6673" stroke="currentColor" stroke-width="3.375"
 				stroke-linecap="round" stroke-linejoin="round" />

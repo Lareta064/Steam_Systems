@@ -1,2 +1,30 @@
 //====== HEADER=====
 header.header
+	.container
+		.comparison-table
+			//=====header-row=====
+			.table-row.table-row__header
+				.cell-name
+				.cell-our
+					p Диагностика<br>от “Паровых систем”
+				.cell-other
+					p Обычное обследование
+			//===table body row=====
+			+comparise-row('Оборудование', 'TRAPMAN® TM5', 'Тестеры конденсатоотводчиков других производителей')
+			//===table body row=====
+			.table-row
+				.cell-name
+					p База данных
+				.cell-our
+					p 3000 конденсатоотводчиков
+				.cell-other
+					span
+						+svg-icon('minus')
+			//===table body row=====
+			+comparise-row('Основание для выводов о работоспособности', 'Индивидуальные заводские характеристики конкретного конденсатоотводчика', 'Тип конденсатоотводчика без учёта индивидуальных характеристик')
+			//===table body row=====
+			+comparise-row2('Определение величины утечки', 'plus', 'minus')
+			//===table body row=====
+			+comparise-row2('Двойная маркировка конденсатоотводчиков', 'plus', 'minus')
+			//===table body row=====
+			+comparise-row2('Технический прогноз', 'plus', 'minus')
