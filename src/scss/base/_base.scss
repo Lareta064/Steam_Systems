@@ -84,12 +84,8 @@ img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
-	object-fit: cover;
 }
-.img-cover{
-	width: 100%;
-	height: 100%;
-}
+
 input,
 button,
 textarea,select,
@@ -123,5 +119,27 @@ input[type="submit"] {
 	}
 	@media (max-width: 767px) {
 		padding-inline: 10px;
+	}
+}
+.pt-100{
+	padding-top: 100px;
+	@media (max-width: 1023px) {
+		padding-top: 60px;
+	}
+}
+.p-80 {
+	padding-block: 80px;
+
+	@media (max-width: 1023px) {
+		padding-block: 40px;
+	}
+	@media (max-width: 767px) {
+		padding-block: 30px;
+	}
+}
+.p-100{
+	padding-block: 100px;
+	@media (max-width: 1023px) {
+		padding-block: 60px;
 	}
 }
