@@ -1,0 +1,14 @@
+.menu-list{
+	display: flex;
+	align-items: center;
+	column-gap:44px;
+	a{
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 1.38;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: var(--black);
+		white-space: nowrap;
+	}
+}

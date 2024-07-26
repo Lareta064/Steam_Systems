@@ -1,3 +1,28 @@
 //====== HEADER=====
 header.header
-	.container
+	.container.header-container
+		//===== LOGO GROUP =====
+		.logo-wrapper.d-flex
+			a(href="#!").logo
+				+svg-icon('logo')
+			.logo-block
+				img(src="./img/tlv.webp", width="48" height="24" alt="tlv")
+				p В россии
+		
+		.header-menu
+			ul.menu-list
+				li
+					a(href="#!") Главная
+				li
+					a(href="#!") О диагностике
+				li
+					a(href="#!") Как проходит диагностика
+				li
+					a(href="#!") О нас
+				li
+					a(href="#!") Частые вопросы
+		.header-right
+			a(href="tel:+78126027770").phone-link
+				+svg-icon('phone')
+				span +7 (812) 602 77 70
+			+btn('Заказать звонок', 'button', 'btn--slim')
