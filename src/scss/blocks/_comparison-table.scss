@@ -1,7 +1,7 @@
 .comparison-table{
 	.table-row{
 		display: grid;
-		grid-template-columns: 20% 1fr 1fr;
+		grid-template-columns: 20.5% 1fr 1fr;
 	}	
 	.cell-name, .cell-our, .cell-other{
 		display: flex;
@@ -9,11 +9,13 @@
 		justify-content: center;
 		padding: 35px;
 		min-height: 165px;
-		// &>*{width: 100%;}
-		// &>*+* {margin-top: 10px;}
-		span{text-align: center;}
+		
 		border-bottom: 1px solid var(--divider-colr);
 	}
+	.cell-name span,
+	.cell-our span,
+	.cell-other span{text-align: center;}
+	.cell-name>*+*, .cell-our>*+*, .cell-other>*+*{margin-top: 10px;}
 	.cell-name{
 		padding-left: 0; padding-right: 20px;
 		font-size: 18px;

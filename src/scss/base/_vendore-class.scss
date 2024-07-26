@@ -14,3 +14,13 @@
 	height: 100%;
 	object-fit: cover;
 }
+.prime-bg{
+	background-color: var(--prime);
+	&>*{color: var(--white) !important;}
+}
+.visible-mobile{
+	display: none;
+	@media (max-width: 767px) {
+	display: block;
+	}
+}
