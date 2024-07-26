@@ -22,3 +22,87 @@ html(lang="ru")
 				h2 Иконки
 				.container-dashboard__content
 					ul
+						li
+							h3 Миксин svg  иконки из спрайта
+							pre.
+								mixin svg-icon-ui(icon)
+									svg(class="svg-"+ ic)ATattributes(attributes)
+										use(href='./img/sprite.svg#svg-'+ ic)
+						li
+							+svg-icon-ui('logo')
+							pre.
+								+svg-icon-ui('logo')
+						li
+							+svg-icon-ui('phone')
+							pre.
+								+svg-icon('phone')
+						li
+							+svg-icon-ui('hands')
+							pre.
+								+svg-icon('hands')
+						li
+							+svg-icon-ui('cubs')
+							pre.
+								+svg-icon('cubs')
+						li
+							+svg-icon-ui('chart')
+							pre.
+								+svg-icon('chart')
+						li
+							+svg-icon-ui('doc')
+							pre.
+								+svg-icon('doc')
+						li
+							+svg-icon-ui('minus')
+							pre.
+								+svg-icon('minus')
+						li
+							+svg-icon-ui('plus')
+							pre.
+								+svg-icon('plus')
+						li
+							+svg-icon-ui('brand')
+							pre.
+								+svg-icon('brand')
+						li
+							+svg-icon-ui('chevron-down')
+							pre.
+								+svg-icon('chevron-down')
+						li
+							+svg-icon-ui('chevron-up')
+							pre.
+								+svg-icon('chevron-up')
+						li
+							+svg-icon-ui('chevron-left')
+							pre.
+								+svg-icon('chevron-left')
+						li
+							+svg-icon-ui('chevron-right')
+							pre.
+								+svg-icon('chevron-right')
+						li
+							+svg-icon-ui('tools')
+							pre.
+								+svg-icon('tools')
+
+						li
+							+svg-icon-ui('shield')
+							pre.
+								+svg-icon('shield')
+						li
+							+svg-icon-ui('filters')
+							pre.
+								+svg-icon('filters')
+						li
+							+svg-icon-ui('requisites')
+							pre.
+								+svg-icon('requisites')
+
+						li
+							+svg-icon-ui('envelope')
+							pre.
+								+svg-icon('envelope')
+						li
+							+svg-icon-ui('pin')
+							pre.
+								+svg-icon('pin')

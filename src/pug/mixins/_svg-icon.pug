@@ -1,0 +1,7 @@
+mixin svg-icon-ui(icon)
+	svg(class="svg-"+ icon)&attributes(attributes)
+		use(href='../img/sprite.svg#svg-'+ icon)
+
+mixin svg-icon(ic)
+	svg(class="svg-"+ ic)&attributes(attributes)
+		use(href='./img/sprite.svg#svg-'+ ic)

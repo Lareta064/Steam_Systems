@@ -1,0 +1,77 @@
+*[class^="svg-"]{
+	display: inline-block;
+}
+.svg-logo {
+	width: 124px;
+	height: 40px;
+}
+.svg-palm, .svg-cubs, .svg-people, .svg-chart, .svg-doc, .svg-tools,.svg-filters{
+	color: #3180DD;
+	fill: transparent;
+	width: 80px;
+	height: 80px;
+}
+.svg-hands, .svg-tools, .svg-shield, .svg-filters{
+	width: 90px;
+	height: 90px;
+}
+.svg-hands, .svg-shield,.svg-support{color: #3180DD;}
+.svg-phone{
+	width: 25px;
+	height: 25px;
+	color:var(--black);
+}
+.svg-support{
+	width: 96px;
+	height: 96px;
+}
+.svg-brand{
+	width: 115px;
+	height: 115px;
+}
+.svg-envelope, .svg-requisites{
+	color: #777777;
+	width: 24px;
+	height: 24px;
+}
+/********OLD*********/
+
+.svg-chevron-down,.svg-chevron-up, .svg-chevron-left, .svg-chevron-right,.svg-close,  .svg-eye, .svg-eye-close,  .svg-minus, .svg-paper, .svg-pin, .svg-plus,  .svg-minus, .svg-search{
+	fill: transparent;
+	width: 24px;
+	height: 24px;
+	color: var(--reed);
+}
+.svg-pin{color: #999999;}
+.svg-close{
+	transition: .3s;
+	&:hover {color: black;}
+}
+
+
+.svg-check.check--big{
+	width: 80px;
+	height: 80px;
+	color: var(--prim);
+	
+}
+
+.btn-play{
+	width: 90px;
+	height: 90px;
+	background-color: var(--black);
+	border-radius: 50%;
+	background-image: url(../img/icons/play.svg);
+	background-size: 21px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: .3s; 
+	&:hover{
+		background-color: var(--black);
+	}
+	@media (max-width: 767px) {
+		width: 45px;
+		height: 45px;
+		background-size: 11px 11px;
+	}
+}
