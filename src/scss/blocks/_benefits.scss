@@ -1,6 +1,12 @@
 .benefits-block{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	@media (max-width: 1199px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 .benefit-item{
 	padding: 70px 35px;
@@ -14,5 +20,6 @@
 	}
 	@media (max-width: 767px) {
 		padding: 70px 20px;
+		min-height: 317px;
 	}
 }
