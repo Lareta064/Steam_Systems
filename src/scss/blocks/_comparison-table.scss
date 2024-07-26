@@ -27,10 +27,15 @@
 		background: var(--prime);
 		color: var(--white);
 		svg[class^="svg-"]{color: white;}
+		p, ul{padding-right: 70px;}
 	}
 	.cell-other{
 		color: var(--paragraph-color);
 		background: var(--bg-collor);
+		p,ul {
+				padding-right: 70px;
+			}
+			
 	}
 	
 	.table-row.table-row__header{
