@@ -42,7 +42,10 @@
 	}
 	
 	.table-row.table-row__header{
-		// &>*{border: 0;}
+		.cell-name{
+			margin: 0;
+			font-size: 0;
+		}
 		
 		margin-bottom: 10px;
 		.cell-our,.cell-other{

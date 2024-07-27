@@ -6,8 +6,10 @@
 .section-title{
 	margin-bottom: 80px;
 	&>*+*{margin-top: 10px;}
+	.h1{line-height: 1.15;}
 	@media (max-width: 767px) {
 		margin-bottom: 40px;
+		.h1 {line-height: 1.28;}
 	}
 }
 .img-cover{
