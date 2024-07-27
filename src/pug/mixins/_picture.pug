@@ -1,0 +1,39 @@
+mixin pic(img, w, h, addCl)
+	picture&attributes(attributes)
+		source(srcset="./img/"+ img +"@2x.webp", media="(min-resolution: 192dpi)" width=""+ w height=""+ h  type="image/webp")
+		img(class=(addCl ? "lazy "+ addCl : "lazy") src="./img/"+ img +".webp", width=""+ w height=""+ h  alt="image")
+mixin pic-ui(img, w, h, addCl)
+	picture&attributes(attributes)
+		source(srcset="../img/"+ img +"@2x.webp", media="(min-resolution: 192dpi)" width=""+ w height=""+ h  type="image/webp")
+		img(class=(addCl ? "lazy "+ addCl : "lazy") src="../img/"+ img +".webp", width=""+ w height=""+ h  alt="image")
+
+mixin pic-sm(img, w375, h375, w, h, addCl)
+	picture
+		source(srcset="./img/"+ img +"-w375.webp", media="(max-width: 767px)" width=""+ w375 height=""+ h375  type="image/webp")
+		source(srcset="./img/"+ img +"-w375@2x.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width=""+ w375 height=""+ h375)
+		source(srcset="./img/"+ img +"@2x.webp", media="(min-resolution: 192dpi)" width=""+ w height=""+ h  type="image/webp")
+		img(class=(addCl ? "lazy "+ addCl : "lazy") src="./img/"+ img +".webp", width=""+ w height=""+ h  alt="image")
+mixin pic-sm-ui(img, w375, h375, w, h, addCl)
+	picture
+		source(srcset="../img/"+ img +"-w375.webp", media="(max-width: 767px)" width=""+ w375 height=""+ h375  type="image/webp")
+		source(srcset="../img/"+ img +"-w375@2x.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width=""+ w375 height=""+ h375)
+		source(srcset="../img/"+ img +"@2x.webp", media="(min-resolution: 192dpi)" width=""+ w height=""+ h  type="image/webp")
+		img(class=(addCl ? "lazy "+ addCl : "lazy") src="../img/"+ img +".webp", width=""+ w height=""+ h  alt="image")
+
+mixin pic-lg(img, w375, h375, w768, h768, w, h, addCl)
+	picture
+		source(srcset="./img/"+ img +"-w375.webp", media="(max-width: 767px)" width=""+ w375 height=""+ h375  type="image/webp")
+		source(srcset="./img/"+ img +"-w375@2x.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width=""+ w375 height=""+ h375)
+		source(srcset="./img/"+ img +"-w768.webp", media="(max-width: 1199px)" width=""+ w768 height=""+ h768  type="image/webp")
+		source(srcset="./img/"+ img +"-w768@2x.webp", media="(max-width: 1199px) and (min-resolution: 192dpi)"  type="image/webp" width=""+ w768 height=""+ h768)
+		source(srcset="./img/"+ img +"@2x.webp", media="(min-resolution: 192dpi)" width=""+ w height=""+ h  type="image/webp")
+		img(class=(addCl ? "lazy "+ addCl : "lazy") src="./img/"+ img +".webp", width=""+ w height=""+ h  alt="image")
+
+mixin pic-lg-ui(img, w375, h375, w768, h768, w, h, addCl)
+	picture
+		source(srcset="../img/"+ img +"-w375.webp", media="(max-width: 767px)" width=""+ w375 height=""+ h375  type="image/webp")
+		source(srcset="../img/"+ img +"-w375@2x.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width=""+ w375 height=""+ h375)
+		source(srcset="../img/"+ img +"-w768.webp", media="(max-width: 1199px)" width=""+ w768 height=""+ h768  type="image/webp")
+		source(srcset="../img/"+ img +"-w768@2x.webp", media="(max-width: 1199px) and (min-resolution: 192dpi)"  type="image/webp" width=""+ w768 height=""+ h768)
+		source(srcset="../img/"+ img +"@2x.webp", media="(min-resolution: 192dpi)" width=""+ w height=""+ h  type="image/webp")
+		img(class=(addCl ? "lazy "+ addCl : "lazy") src="../img/"+ img +".webp", width=""+ w height=""+ h  alt="image")

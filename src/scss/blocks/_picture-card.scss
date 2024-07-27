@@ -1,0 +1,39 @@
+.picture-card{
+	display: flex;
+	
+	align-items: center;
+	&__info, &__img{
+		flex-shrink: 0;
+		width: 50%;height: 530px;
+	}
+	&__info{
+		padding-left: 80px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap:20px;
+		&>*{width: 100%;}
+		
+	}
+
+	&:nth-child(2n+1){
+		flex-direction: row-reverse;
+		.picture-card__info {
+			padding-left: 0;
+			padding-right: 80px;
+		}
+		@media (max-width: 1023px) {
+		flex-direction: column;
+			.picture-card__info{padding-left: 0;}
+		}
+	}
+	@media (max-width: 1023px) {
+		flex-direction: column;
+		&__info,&__img{width: 100%;}
+		&__info{
+			padding: 0;
+			padding-block: 40px 60px;
+			height: auto;
+		}
+	}
+}
