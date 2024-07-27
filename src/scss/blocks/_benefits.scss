@@ -1,4 +1,4 @@
-.benefits-block{
+.border-cards{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	@media (max-width: 1199px) {
@@ -7,8 +7,12 @@
 	@media (max-width: 767px) {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	&.h-auto .border-card{
+		height: auto;
+		min-height: 288px;
+	}
 }
-.benefit-item{
+.border-card{
 	padding: 70px 35px;
 	background: #fff;
 	border: 1px solid var(--divider-colr);

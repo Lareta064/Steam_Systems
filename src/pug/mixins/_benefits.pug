@@ -1,17 +1,27 @@
 mixin benefit-item(svgName, title, txt)
-	.benefit-item&attributes(attributes)
-		i.benefit-item__icon
-			+svg-icon-ui(svgName)
-		.benefit-item__text
+	.border-card&attributes(attributes)
+		if svgName !=''
+			i.border-card__icon
+				+svg-icon-ui(svgName)
+		.border-card__text
 			p.title !{title}
 			p !{txt}
 
 mixin benefits-block(args)
-	.benefits-block
+	.border-cards&attributes(attributes)
 		each item in args
-			.benefit-item
-				i.benefit-item__icon
-					+svg-icon-ui(item.svg)
-				.benefit-item__text
-					p.title !{item.title}
-					p !{item.txt}
+			.border-card
+				if item.svg !==''
+					i.border-card__icon
+						+svg-icon-ui(item.svg)
+				.border-card__text
+					if item.cl
+						p.h3 !{item.title}
+						p !{item.txt}
+					else
+						p.title !{item.title}
+						p !{item.txt}
+mixin border-card(title, txt)
+	.border-card&attributes(attributes)
+		p.title !{title}
+		p !{txt}
