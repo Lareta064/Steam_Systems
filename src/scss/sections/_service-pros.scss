@@ -1,3 +1,52 @@
 .service-pros{
-	.section-title{max-width: 100%;}
+	.section-title{
+		max-width: 100%;
+		@media (max-width: 1199px) {
+			margin-bottom: 80px;
+		}
+		@media (max-width: 767px) {
+		.h3{font-size: 12px; margin-bottom: 13px!important;}
+		}
+	}
+	.shadow-card{padding-right: 165px;}
+}
+.service-pros__content{
+	@media (max-width: 1199px) {
+		.service-pros__img,
+		.service-pros__text {
+			grid-column: span 5;
+			}
+		}
+		.shadow-card {padding-right: 35px;}
+					
+				
+	@media (max-width: 1023px) {
+		.service-pros__img, .service-pros__text{
+			grid-column: span 10;
+		}
+		.shadow-card {padding-right: 80px;}
+	}
+	@media (max-width: 767px) {
+	.shadow-card {
+			padding-right: 10px;
+		}
+	}
+}
+.service-pros__img{
+	position: relative;
+	max-width:536px;
+	margin-inline: auto;
+	aspect-ratio: 1;
+	.service-pros-logo{
+		position: absolute;
+		transform: translate(10px, -55%);
+		z-index: 2;
+		@media (max-width: 767px) {
+			
+			svg{
+				width: 80px;
+				height: 80px;
+			}
+		}
+	}
 }
