@@ -2,6 +2,9 @@
 	.table-row{
 		display: grid;
 		grid-template-columns: 20.5% 1fr 1fr;
+		ul li:before {
+			background-color: #fff;
+		}
 	}	
 	.cell-name, .cell-our, .cell-other{
 		display: flex;

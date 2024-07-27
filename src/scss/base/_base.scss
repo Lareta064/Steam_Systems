@@ -59,10 +59,27 @@ a{color: inherit}
 ul {
 	margin: 0;
 	padding: 0;
-	list-style-type: disc;
-	margin-left: 16px;
-	li + li{margin-top: 10px;}
+	list-style-type: none;
+	li{
+		position: relative;
+		display: flex;
+		align-items: center;
+		
+	}
+	li:before{
+		content:'';
+		display: block;
+		width: 4px;
+		height: 4px;
+		background-color: var(--prime);
+		flex-shrink: 0;
+		margin-right: 10px;
+	}
 	
+	li + li{margin-top: 10px;}
+}
+.prime-bg li:before {
+	background-color: #fff;
 }
 ol{
 	margin: 0;
@@ -148,6 +165,7 @@ input[type="submit"] {
 		padding-block: 60px;
 	}
 }
+
 section{
 	padding-top: 50px;
 	padding-bottom: 50px;
