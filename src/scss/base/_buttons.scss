@@ -20,6 +20,7 @@ $padInline:22px;
 	color: var(--white);
 	background-color: var(--green);
 	transition: .3s;
+	width: fit-content;
 	&.btn--slim{
 		height: 34px;
 		line-height: 34px;

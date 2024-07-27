@@ -1,0 +1,90 @@
+section.report-slider
+	.container
+		.report-slider-header.d-flex
+			.section-title.mb-0
+				h2.h1 Исчерпывающий отчёт
+				.h2.txt-prime Полная картина истинного положения дел
+			
+			//===== slider navigation====
+			.custom-slider-nav
+				.swiper-button-prev.report-prev
+				.swiper-button-next.report-next
+		//=======slider ======
+		.report-swiper.swiper
+			.swiper-wrapper
+				//====== slide =====
+				.swiper-slide
+					.picture-card
+						.picture-card__img
+							picture
+								source(srcset="./img/slider/1-w375.webp", media="(max-width: 767px)" width="340" height="340"  type="image/webp")
+								source(srcset="./img/slider/1.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width="340" height="340")
+								source(srcset="./img/slider/1@2x.webp", media="(min-resolution: 192dpi)" width="678" height="538"  type="image/webp")
+								img.lazy.img-cover( src="./img/slider/1.webp", width="678" height="538"  alt="image")
+								
+						.picture-card__info
+							.h3 Подробная карта объекта с расположением всех конденсатоотводчиков
+							p Вам больше не придётся тратить время на поиски конкретного конденсатоотводчика
+							+btn('Попробовать')
+				//====== slide =====
+				.swiper-slide
+					.picture-card
+						.picture-card__img
+							picture
+								source(srcset="./img/slider/2-w375.webp", media="(max-width: 767px)" width="340" height="340"  type="image/webp")
+								source(srcset="./img/slider/2.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width="340" height="340")
+								source(srcset="./img/slider/2@2x.webp", media="(min-resolution: 192dpi)" width="678" height="538"  type="image/webp")
+								img.lazy.img-cover( src="./img/slider/2.webp", width="678" height="538"  alt="image")
+								
+						.picture-card__info
+							.h3 Сводная таблица с классификацией конденсатоотводчиков и результатами испытаний:
+							p весь парк конденсатоотводчиков перед вами как на ладони. Вы видите исправные и неисправные устройства, а также масштаб потерь.
+
+							+btn('Попробовать')
+				//====== slide =====
+				.swiper-slide
+					.picture-card
+						.picture-card__img
+							picture
+								source(srcset="./img/slider/3-w375.webp", media="(max-width: 767px)" width="340" height="340"  type="image/webp")
+								source(srcset="./img/slider/3.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width="340" height="340")
+								source(srcset="./img/slider/3@2x.webp", media="(min-resolution: 192dpi)" width="678" height="538"  type="image/webp")
+								img.lazy.img-cover( src="./img/slider/3.webp", width="678" height="538"  alt="image")
+								
+						.picture-card__info
+							.h3 Рекомендации и комментарии экспертов “Паровых систем”
+							p Вы точно знаете, что нужно сделать для повышения энергоэффективности вашей ПКС
+							+btn('Попробовать')
+					
+				//====== slide =====
+				.swiper-slide
+					.picture-card
+						.picture-card__img
+							picture
+								source(srcset="./img/slider/4-w375.webp", media="(max-width: 767px)" width="340" height="340"  type="image/webp")
+								source(srcset="./img/slider/4.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width="340" height="340")
+								source(srcset="./img/slider/4@2x.webp", media="(min-resolution: 192dpi)" width="678" height="538"  type="image/webp")
+								img.lazy.img-cover( src="./img/slider/4.webp", width="678" height="538"  alt="image")
+								
+						.picture-card__info
+							.h3 Бюджетная оценка замены конденсатоотводчиков 
+							p с расчётом срока окупаемости 
+							+btn('Попробовать')
+			
+				//====== slide =====
+				.swiper-slide
+					.picture-card
+						.picture-card__img
+							picture
+								source(srcset="./img/slider/5-w375.webp", media="(max-width: 767px)" width="340" height="340"  type="image/webp")
+								source(srcset="./img/slider/5.webp", media="(max-width: 767px) and (min-resolution: 192dpi)"  type="image/webp" width="340" height="340")
+								source(srcset="./img/slider/5@2x.webp", media="(min-resolution: 192dpi)" width="678" height="538"  type="image/webp")
+								img.lazy.img-cover( src="./img/slider/5.webp", width="678" height="538"  alt="image")
+								
+						.picture-card__info
+							.h3 Статистические сведения
+							p по производителям, работоспособности, типам неисправности, применению конденсатоотводчиков — с комментариями наших специалистов
+
+							+btn('Попробовать')
+			
+			
