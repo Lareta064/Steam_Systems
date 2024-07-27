@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, .h1, .h1-bold, .h2, .h2-semi, .h3, .title, .txt{
 	font-size: 25px;
 	line-height: 1.28;
 	color: var(--grey);
+	@media (max-width: 1023px) {
+	font-size: 18px;
+	line-height: 1.39;
+	}
 }
 .title{
 	font-size: 18px;
