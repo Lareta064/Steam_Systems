@@ -150,6 +150,10 @@ gulp.task("copy:fonts", function(callback) {
     return gulp.src("./src/fonts/**/*.*").pipe(gulp.dest("./build/fonts/"));
     callback();
 });
+gulp.task("copy:favicon", function(callback) {
+    return gulp.src("./src/favicon/**/*.*").pipe(gulp.dest("./build/favicon/"));
+    callback();
+});
 // Слежение за HTML и CSS и обновление браузера
 gulp.task("watch", function() {
     // Следим за картинками и скриптами и обновляем браузер
@@ -176,7 +180,7 @@ gulp.task("watch", function() {
     watch("./src/libs/**/*.*", gulp.parallel("copy:libs"));
     watch("./src/video/**/*.*", gulp.parallel("copy:video"));
     watch("./src/fonts/**/*.*", gulp.parallel("copy:fonts"));
-
+    watch("./src/favicon/**/*.*", gulp.parallel("copy:favicon"));
 
 });
 
@@ -207,7 +211,7 @@ gulp.task(
        
         gulp.parallel("clean:build"),
       
-        gulp.parallel("scss","scss2",  "pug","pugUi","copy:img", "copy:js", "copy:libs", "copy:video", "copy:fonts"),
+        gulp.parallel("scss","scss2",  "pug","pugUi","copy:img", "copy:js", "copy:libs", "copy:video", "copy:fonts", "copy:favicon"),
         gulp.parallel("html:prettify"),
         gulp.parallel("server", "watch"),
         

@@ -5,6 +5,7 @@
 }
 .section-title{
 	margin-bottom: 80px;
+	&>*+*{margin-top: 10px;}
 	@media (max-width: 767px) {
 		margin-bottom: 40px;
 	}
