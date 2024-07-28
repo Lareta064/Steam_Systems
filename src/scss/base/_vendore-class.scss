@@ -1,4 +1,4 @@
-.section-title--center {
+.section-title--center, .title-center {
 	text-align: center;
 	max-width: 1085px;
 	margin-inline: auto;
@@ -6,11 +6,12 @@
 .section-title{
 	margin-bottom: 80px;
 	&>*+*{margin-top: 20px;}
-	.h1{line-height: 1.15;}
+	.h1{line-height: 1.15; margin-bottom: 0;}
 	
 	@media (max-width: 767px) {
 		margin-bottom: 40px;
-		.h1 {line-height: 1.28;}
+		.h1 {line-height: 1.28; margin-bottom: 0;}
+		&>*+* {margin-top: 20px;}
 		.h2{font-size: 18px;}
 	}
 }
