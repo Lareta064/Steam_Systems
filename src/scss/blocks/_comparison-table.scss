@@ -52,9 +52,12 @@
 			line-height: 1.28;
 			align-items: center;
 			text-align: center;
+			padding-right: 35px;
+			p{padding-right: 0;}
 			@media (max-width: 767px) {
 				font-size: 18px;
 				line-height: 1.3;
+				
 			}
 		}
 	}
