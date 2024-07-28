@@ -1,6 +1,7 @@
-.report-slider-header{
+.slider-header-title{
 	margin-bottom: 30px;
 	justify-content: space-between;
+	.section-title{margin-bottom: 0;}
 }
 .report-slider{
 	@media (max-width: 767px) {
@@ -58,4 +59,8 @@
 	 z-index: 2;
 	 justify-content: space-between;
 	}
+}
+.grey-bg .custom-slider-nav {
+	.swiper-button-next,
+		.swiper-button-prev {background-color: transparent;}
 }

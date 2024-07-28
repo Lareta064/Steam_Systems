@@ -20,6 +20,18 @@ document.addEventListener("DOMContentLoaded", function (){
 			},
 		}
 	});
+	var reviewSlider = new Swiper('.reviews-swiper',{
+		spaceBetween:20,
+		speed:1000,
+		
+		 navigation: {
+			nextEl: ".review-next",
+			prevEl: ".review-prev",
+		},
+		breakpoints: {
+			768: {spaceBetween: 0,}
+		}
+	})
 	/*===========Accordion=============*/
 	;(function ($, window, document, undefined) {
 	"use strict";

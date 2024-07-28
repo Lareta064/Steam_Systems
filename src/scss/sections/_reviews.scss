@@ -1,0 +1,39 @@
+.reviews{
+	.slider-header-title{margin-bottom: 90px;}
+}
+.review-card{
+	padding-left: 204px;
+	padding-right: 204px;
+	&__company{
+		font-weight: 700;
+		font-size: 13px;
+		text-transform: uppercase;
+		text-decoration: underline;
+		text-decoration-skip-ink: none;
+		color: #999;
+		margin-bottom: 10px;
+	}
+	&__title{
+		font-size: 24px;
+		line-height: 1.25;
+		margin-bottom: 30px;
+		span{
+			text-transform: uppercase;
+		}
+	}
+	&__text{
+		.txt-20{
+			margin-bottom: 5px;
+		}
+		p{
+			line-height: 1.67;
+		}
+		p+p{margin-top: 1em;}
+	}
+	@media (max-width: 1439px) {
+		padding-inline: 15%;
+	}
+	@media (max-width: 1023px) {
+		padding-inline: 0
+	}
+}
