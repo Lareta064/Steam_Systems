@@ -1,0 +1,8 @@
+.card-icon.card-icon--special{
+	background-color: transparent;
+	.card-icon__img{
+		border: 1px solid var(--prime);
+		outline: 1.8px solid var(--prime);
+	}
+	.h2{font-weight: 600;}
+}
