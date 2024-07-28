@@ -3,12 +3,12 @@ mixin card-icon(svg, title)
 		.card-icon__img
 			+svg-icon(svg)
 		.card-icon__text
-			.h3 1. Постановка и обсуждение задачи
+			.h3 !{title}
 			block
 mixin card-icon-ui(svg, title)
 	.card-icon
 		.card-icon__img
 			+svg-icon-ui(svg)
 		.card-icon__text
-			.h3 1. Постановка и обсуждение задачи
+			.h3 !{title}
 			block

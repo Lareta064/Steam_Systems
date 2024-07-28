@@ -13,7 +13,7 @@
 	}
 }
 .border-card{
-	padding: 70px 35px;
+	padding: 60px 35px;
 	background: #fff;
 	border: 1px solid var(--divider-colr);
 	min-height: 435px;
@@ -22,8 +22,9 @@
 	p:not(.title){
 		color: var(--paragraph-color);
 	}
+	.btn{margin-top: 50px;}
 	@media (max-width: 767px) {
-		padding: 70px 20px;
+		padding: 60px 20px;
 		min-height: 317px;
 	}
 }

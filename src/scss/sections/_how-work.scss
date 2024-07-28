@@ -1,0 +1,25 @@
+.how-work{
+	.h1{
+		@media (max-width: 1199px) {
+		font-size: 30px;
+		}
+	}
+	article + article{
+		margin-top: 100px;
+		@media (max-width: 767px) {
+		margin-top: 60px;
+		}
+	}
+}
+.second-stage-list.border-cards{
+	grid-template-columns: 1fr 1fr 1fr;
+	@media (max-width: 1199px) {
+		grid-template-columns: 1fr
+	}
+}
+.border-card{
+	.h3{
+		column-gap:10px;
+		span:first-child{flex-shrink: 0;}
+	}
+}

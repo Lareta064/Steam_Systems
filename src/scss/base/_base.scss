@@ -78,6 +78,25 @@ ul {
 	
 	li + li{margin-top: 10px;}
 }
+ul.special-list{
+	&>li{
+		display: block;
+		position: relative;
+		padding-left: 16px;
+		ul{
+			margin-top: 16px;
+			margin-left: -16px;
+		}
+		&:before{
+			content:'\2013';
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 1px;
+			left: 0;
+		}
+	}
+}
 .prime-bg li:before {
 	background-color: #fff;
 }
