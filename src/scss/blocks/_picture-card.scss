@@ -1,10 +1,4 @@
-.picture-cards{
-	border-top: 1px solid var(--divider-colr);
-	@media (max-width: 1023px) {
-		border-top: 0;
-	}
 
-}
 .picture-card{
 	display: flex;
 	background-color: #fff;
