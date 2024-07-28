@@ -8,6 +8,8 @@
 	padding-block:60px;
 	max-width: 1050px;
 	margin-inline:auto;
+	border-bottom: 1px solid var(--divider-colr);
+	
 	&__img{
 		justify-content: center;
 		flex-shrink: 0;
@@ -15,17 +17,21 @@
 		height: 250px;
 		border-radius: 50%;
 		outline-offset: -16px;
-		outline: 1px solid var(--prime);
+		outline: 3px solid var(--prime);
 		border:16px solid #F8F9FB;
 		@media (max-width: 1199px) {
-		width: 150px;
-		height: 150px;
-		outline-offset: -10px;
-		border: 10px solid #F8F9FB;
-		svg{
-			width: 54px;
-			height: 54px;
+			width: 150px;
+			height: 150px;
+			outline-offset: -10px;
+			outline: 1.8px solid var(--prime);
+			border: 10px solid #F8F9FB;
+			svg{
+				width: 54px;
+				height: 54px;
+			}
 		}
+		@media (max-width: 767px) {
+			outline: 1.2px solid var(--prime);
 		}
 	}
 	&__text{
@@ -33,6 +39,7 @@
 		padding-right: 100px;
 		&>*+*{margin-top: 20px;}
 		.btn{margin-top: 50px;}
+				
 		@media (max-width: 1023px) {
 			padding-right: 0;
 		}
