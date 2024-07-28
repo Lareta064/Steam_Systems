@@ -1,0 +1,14 @@
+mixin card-icon(svg, title)
+	.card-icon
+		.card-icon__img
+			+svg-icon('cubs')
+		.card-icon__text
+			.h3 1. Постановка и обсуждение задачи
+			block
+mixin card-icon-ui(svg, title)
+	.card-icon
+		.card-icon__img
+			+svg-icon-ui('cubs')
+		.card-icon__text
+			.h3 1. Постановка и обсуждение задачи
+			block
