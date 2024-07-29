@@ -1,43 +1,50 @@
 //============FOOTER============
 footer.footer
-	.footer-container.d-flex
-		.footer-info
-			.footer-logo
-				.logo-wrapper.d-flex
-					a(href="#!").logo
-						+svg-icon('logo-white')
-					.logo-block
-						img(src="./img/tlv-white.webp", width="48" height="24" alt="tlv")
-						//- p В россии
-				p ООО “Паровые системы”
-			
-			.footer-contacts
-				a(href="mailto:info@steamsys.ispi.ru").contact-link.txt-bold
-					+svg-icon('envelope')
-					span info@steamsys.ispi.ru
-				.contact-link
-					+svg-icon('pin')
-					address 191119, Санкт-Петербург, ул. Воронежская, дом 5, литера А, помещение 44-Н, комнаты 3-8
-				.contacts-group
-					a(href="tel:+78126027770").contact-link
-						+svg-icon('phone')
-						span +7 (812) 602 77 70
-					+btn('Заказать звонок', 'button', 'btn--slim')
+	.container
+		.footer-top.d-flex
+			.footer-info
+				.footer-logo
+					.logo-wrapper.d-flex
+						a(href="#!").logo
+							+svg-icon('logo-white')
+						.logo-block
+							img(src="./img/tlv-white.webp", width="66" height="33" alt="tlv")
+							//- p В россии
+					p ООО “Паровые системы”
 				
-			.contact-link.requisites-block
-				+svg-icon('requisites')
-				ul
-					li ИНН/КПП:7816436595/784001001
-					li Банковские реквизиты:
-					li БИК: 044030858Р.С. № 40702810900023245408 
-					li Филиал «ЮниКредит Банк» в г. Санкт-Петербург,<br>К.С. 30101810800000000858
-			.social-block
-				a(href="#!").social-link
-					img(src="./img/social/tg.webp", alt="tg")
-				a(href="#!").social-link
-					img(src="./img/social/vk.webp", alt="vk")
-			.footer-copyright
-				p &copy; 2024 Все права защищены.
-				a(href="#!") Политика #[span.txt-prime конфиденциальности] 
-
-		.footer-map#map
+				//====contacts====	
+				.footer-contacts
+					a(href="mailto:info@steamsys.ispi.ru").contact-link.txt-bold
+						+svg-icon('envelope')
+						span info@steamsys.ispi.ru
+					.contact-link
+						+svg-icon('pin')
+						address 191119, Санкт-Петербург, ул. Воронежская, дом&nbsp;5, литера А, помещение 44-Н, комнаты 3-8
+					.contacts-group
+						a(href="tel:+78126027770").contact-link
+							+svg-icon('phone')
+							span +7 (812) 602 77 70
+						+btn('Заказать звонок', 'button')
+				//====requisites====	
+				.contact-link.requisites-block
+					+svg-icon('requisites')
+					ul
+						li ИНН/КПП:7816436595/784001001
+						li Банковские реквизиты:
+						li БИК: 044030858
+						li Р.С. № 40702810900023245408 
+						li Филиал «ЮниКредит Банк» в г. Санкт-Петербург,
+						li К.С. 30101810800000000858
+				//====social====
+				.social-block
+					a(href="#!").social-link
+						img(src="./img/social/tg.webp", alt="tg")
+					a(href="#!").social-link
+						img(src="./img/social/vk.webp", alt="vk")
+			
+			//===map wrapper =====
+			.footer-map#map
+		//===== footer-bottom row ====
+		.footer-copyright
+			p &copy; 2024 Все права защищены.
+			a(href="#!") Политика #[span.txt-prime конфиденциальности] 

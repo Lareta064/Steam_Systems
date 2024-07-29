@@ -164,7 +164,12 @@ address {
 		padding-inline: 10px;
 	}
 }
-
+.main{
+	padding-bottom: 50px;
+	@media (max-width: 1023px) {
+	padding-bottom: 30px;
+	}
+}
 section{
 	padding-top: 50px;
 	padding-bottom: 50px;
