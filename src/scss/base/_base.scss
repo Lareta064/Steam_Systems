@@ -55,7 +55,7 @@ a:hover {
 	text-decoration: none;
 	
 }
-a{color: inherit}
+a{color: inherit; text-decoration-skip-ink: none;}
 ul {
 	margin: 0;
 	padding: 0;
@@ -150,7 +150,9 @@ input[type="submit"] {
 	padding: 0;
 	cursor: pointer;
 }
-
+address {
+	white-space: normal;
+}
 .container,.footer-container{
 	width: min(1440px, 100%);
 	margin-inline: auto;

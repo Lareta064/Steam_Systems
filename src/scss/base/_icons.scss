@@ -5,6 +5,10 @@
 	width: 124px;
 	height: 40px;
 }
+.svg-logo-white{
+	width: 171px;
+	height: 55px;
+}
 .svg-palm, .svg-cubs, .svg-people, .svg-chart, .svg-doc, .svg-tools,.svg-filters{
 	color: #3180DD;
 	fill: transparent;
@@ -40,9 +44,9 @@
 	fill: transparent;
 	width: 24px;
 	height: 24px;
-	color: var(--reed);
+	 color: #999999;;
 }
-.svg-pin{color: #999999;}
+
 .svg-close{
 	transition: .3s;
 	&:hover {color: black;}
