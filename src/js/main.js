@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function (){
 		speed:1000,
 		
 		 navigation: {
-			nextEl: ".review-next",
-			prevEl: ".review-prev",
+			nextEl: ".reviews-next",
+			prevEl: ".reviews-prev",
 		},
 		breakpoints: {
 			768: {spaceBetween: 0,}
