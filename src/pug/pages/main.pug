@@ -37,24 +37,29 @@ block content
 		include ../sections/_footer
 		//=======отложенная загрузка карты===
 		script.
-			document.addEventListener("DOMContentLoaded", function() {
-				
-				const mapWrapper = document.getElementById('map');
-				
-
+			function loadMapScript() {
 				const script = document.createElement('script');
 				script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A13e02d731c04b56220a2a064d1fa54db38ac5402f907fd4bdf75e632a107fa8e&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true';
 				script.async = true;
-				script.defer = true;
-				script.onload = function() {
-				console.log('Yandex Map script loaded successfully.');
-				};
-				script.onerror = function() {
-				console.error('Error loading Yandex Map script.');
-				};
-				mapWrapper.appendChild(script);
-				
+				document.getElementById('map').appendChild(script);
+			}
+
+			// Использование Intersection Observer API для отслеживания видимости элемента
+			const mapDiv = document.getElementById('map');
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						loadMapScript();
+						observer.disconnect(); // Отключить наблюдатель после загрузки карты
+					}
+				});
+			}, {
+				rootMargin: '0px',
+				threshold: 0.1 // Загружать карту, когда 10% элемента станет видимым
 			});
+
+			observer.observe(mapDiv);
+			
 
 
 block variables

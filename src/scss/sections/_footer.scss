@@ -10,17 +10,23 @@
 		}
 	}
 	&-info{
-		width: 420px;
+		width: 100%;
+		max-width: 423px;
 		flex-shrink: 0;
 		display: flex;
 		flex-direction: column;
 		row-gap:40px;
 		padding-bottom: 20px;
+		
 	}
 	&-map{
 		flex-grow: 1;
 		max-width: 815px;
 		padding-top: 50px;
+		@media (max-width: 1023px) {
+		padding-top: 0;
+		height: 508px;
+		}
 
 	}
 	&-contacts{
@@ -44,6 +50,9 @@
 		span{text-decoration: underline; }
 	}
 		.contacts-group .btn{width: 217px;}
+	@media (max-width: 1023px) {
+	 padding-bottom: 70px;
+	}
 }
 .requisites-block{
 	align-items: flex-start;
