@@ -127,7 +127,35 @@ html(lang="ru")
 				flex-direction: column;
 				row-gap: 10px;
 				}
+				.menu-list {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-column-gap: 44px;
+				-moz-column-gap: 44px;
+				column-gap: 44px;
+				}
 
+				.menu-list li:before {
+				display: none;
+				}
+
+				.menu-list li + li {
+				margin-top: 0;
+				}
+
+				.menu-list a {
+				font-weight: 700;
+				font-size: 13px;
+				line-height: 1.38;
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: var(--black);
+				white-space: nowrap;
+				}
 				.hero {
 				padding-top: 70px;
 				padding-bottom: 56px;

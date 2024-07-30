@@ -170,7 +170,7 @@ gulp.task("watch", function() {
 
     // Слежение за PUG и сборка
     watch("./src/pug/**/*.pug", gulp.parallel("pug"));
-    watch("./src/pug/ui/*.pug", gulp.parallel("pugUi"));
+    // watch("./src/pug/ui/*.pug", gulp.parallel("pugUi"));
 
     // Следим за картинками и скриптами, и копируем их в build
     
