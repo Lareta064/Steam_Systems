@@ -25,6 +25,7 @@
 	@media (max-width: 767px) {
 		min-height: unset;
 		height: calc(100dvh - 100px);
+		height: calc(100vh - 150px);
 		padding-top: 35px;
 		background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #fff 100%), url(../img/header-w375.webp);
 		.hero-desck{

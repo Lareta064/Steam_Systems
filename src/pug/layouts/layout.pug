@@ -26,8 +26,7 @@ html(lang="ru")
 		//-============ fancybox =============
 		//- link(rel="stylesheet", href="./libs/fancybox/fancybox.css")
 		
-		//======= main styles ======
-		link(rel="stylesheet", href="./css/main.css")
+		
 
 		title !{title}
 		style.
@@ -58,6 +57,53 @@ html(lang="ru")
 				font-weight: 700;
 				font-style: normal;
 				font-display: swap;
+			}
+			.header{
+				padding-block:21px 20px;
+				width: 100%;
+				
+				&-container{
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width:min(1440px, 100%);
+				}
+				.contacts-group{
+					@media (max-width: 767px) {
+					display: none;
+					}
+				}
+			}
+			.logo-wrapper{
+				align-items: flex-start;
+				column-gap:8px;
+			}
+			.logo-block{
+				p{
+					font-weight: 500;
+					font-size: 9px;
+					line-height: 1;
+					letter-spacing: 0.01em;
+					text-transform: uppercase;
+					color: var(--black)
+				}
+			}
+			.contact-link{
+				white-space: nowrap;
+				font-weight: 700;
+				line-height: 1;
+				color: var(--black);
+				display: flex;
+				align-items: center;
+				svg{
+					flex-shrink: 0;
+				}
+			}
+			.contacts-group{
+				display: flex;
+				flex-direction: column;
+				row-gap:10px;
 			}
 			.hero{
 				padding-top: 70px;
@@ -96,16 +142,17 @@ html(lang="ru")
 					.h1,.h1-bold{font-size: 25px;}
 				}
 			}
-				
+		//======= main styles ======
+		link(rel="stylesheet", href="./css/main.css")
+			
 	body(class=(bodyCl !=="" ? bodyCl : ''))
 		
 		block content
-		
+		a(href="#top")#backtop
+			+svg-icon('chevron-up')
 		//=============== jquery ==================
 		script(src="./libs/jquery/jquery-3.0.0.min.js")
 		script(src="./libs/jquery.lazy.min.js")
-
-		
 		//=============== swiper js ===============
 		script(src="./libs/swiper/swiper.js")
 		//-============fancybox====================

@@ -4,5 +4,10 @@
 	}
 	.picture-cards{
 		border-top: 1px solid var(--divider-colr);
+		@media (max-width: 1023px) {
+		.picture-card:last-child{
+			.picture-card__info{padding-bottom: 0;}
+		}
+		}
 	}
 }

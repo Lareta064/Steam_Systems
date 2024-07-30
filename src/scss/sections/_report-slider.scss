@@ -4,6 +4,16 @@
 	.section-title{margin-bottom: 0;}
 }
 .report-slider{
+	@media (max-width: 1023px) {
+	.swiper-slide{min-height: 100%; height: auto;}
+	.picture-card{height: 100%;}
+	.picture-card__info{
+		flex-grow: 1;
+		padding-bottom: 0;
+		justify-content: flex-end;
+		
+	}
+	}
 	@media (max-width: 767px) {
 		position: relative;
 	
@@ -54,13 +64,13 @@
 	 left: 0;
 	 right: 0;
 	 padding-inline:10px;
-	 top: 45%;
+	 top: 55%;
 	 transform: translateY(-40%);
 	 z-index: 2;
 	 justify-content: space-between;
 	}
 }
-.grey-bg .custom-slider-nav {
-	.swiper-button-next,
-		.swiper-button-prev {background-color: transparent;}
-}
+// .grey-bg .custom-slider-nav {
+// 	.swiper-button-next,
+// 		.swiper-button-prev {background-color: transparent;}
+// }

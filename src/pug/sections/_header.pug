@@ -8,21 +8,23 @@ header.header
 			.logo-block
 				img(src="./img/tlv.webp", width="48" height="24" alt="tlv")
 				p В россии
-		
-		.header-menu
-			ul.menu-list
-				li
-					a(href="#!") Главная
-				li
-					a(href="#!") О диагностике
-				li
-					a(href="#!") Как проходит диагностика
-				li
-					a(href="#!") О нас
-				li
-					a(href="#!") Частые вопросы
+		#menu.header-menu-wrapper
+			.header-menu
+				ul.menu-list
+					li
+						a(href="#!") Главная
+					li
+						a(href="#comparison") О диагностике
+					li
+						a(href="#how-work") Как проходит диагностика
+					li
+						a(href="#specialists") О нас
+					li
+						a(href="#faq") Частые вопросы
 		.header-right.contacts-group
 			a(href="tel:+78126027770").contact-link
 				+svg-icon('phone')
 				span +7 (812) 602 77 70
 			+btn('Заказать звонок', 'button', 'btn--slim')
+		#menu-toggle.menu-toggle
+			span

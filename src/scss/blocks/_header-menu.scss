@@ -2,6 +2,7 @@
 	display: flex;
 	align-items: center;
 	column-gap:44px;
+	li:before{display: none;}
 	li +li{margin-top: 0;}
 	a{
 		font-weight: 700;
@@ -13,3 +14,109 @@
 		white-space: nowrap;
 	}
 }
+.header-menu-wrapper{
+	@media (max-width: 1279px) {
+	
+		position: fixed;
+		top: 0;
+		bottom: 0;right: 0;
+		width: 100%;
+		background-color: rgba(0,0,0, .5);
+		display: flex;
+		justify-content: flex-end;
+		transition: .3s; 
+		transform: translateX(110%);
+		.header-menu{
+			width: 100%;
+			max-width: 380px;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			padding: 60px 30px;
+		}
+		.menu-list{
+			flex-direction: column;
+			align-items: flex-start;
+			row-gap:24px;
+		}
+	}
+	&.active{
+		transform: translateX(0);
+	}
+}
+/*========GAMBURGER======*/
+.menu-toggle {
+	display: none;
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+
+	z-index: 11;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+
+}
+
+@media (max-width: 1279px) {
+	.menu-toggle {
+		display: flex;
+
+	}
+}
+
+.menu-toggle span {
+	position: relative;
+	height: 2px;
+	width: 18px;
+	border-radius: 3px;
+	background-color: var(--black);
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.menu-toggle span:after,
+.menu-toggle span:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 2px;
+	background-color: inherit;
+	border-radius: 5px;
+	right: 0;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.menu-toggle span:after {
+	top: -6px;
+}
+
+.menu-toggle span:before {
+	bottom: -6px;
+}
+
+
+.active.menu-toggle span {
+	background-color: transparent !important;
+}
+
+
+.active.menu-toggle span:after {
+	top: 0px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background-color: var(--black);;
+}
+
+.active.menu-toggle span:before {
+	bottom: 0px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background-color: var(--black);;
+}
+

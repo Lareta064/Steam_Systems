@@ -1,16 +1,19 @@
 .header{
 	padding-block:21px 20px;
 	width: 100%;
-	overflow: hidden;
-	overflow-x: auto;
-	scrollbar-width: none;
-	&::-webkit-scrollbar{display: none;}
+	
 	&-container{
 		height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		width: 1440px;
+		width:min(1440px, 100%);
+	}
+	.contacts-group{
+		.btn{min-width: unset;}
+		@media (max-width: 767px) {
+		display: none;
+		}
 	}
 }
 .logo-wrapper{

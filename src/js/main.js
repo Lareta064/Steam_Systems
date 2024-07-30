@@ -1,13 +1,59 @@
 document.addEventListener("DOMContentLoaded", function (){
 	$('.lazy').lazy();
+	/*===============MOBILE MENU ==================*/
+	const menuToggle = document.querySelector('#menu-toggle');
+	const mobileMenu = document.querySelector('#menu');
+	const bodyEl = document.body;
+	if (menuToggle) {
+		function resetActiveMenu(){
+			mobileMenu.classList.remove('active');
+			menuToggle.classList.remove('active');
+		}
+		menuToggle.addEventListener('click', ()=> {
+			
+			if (menuToggle.classList.contains('active')) {
+				resetActiveMenu();
+				bodyEl.classList.remove('lock');
+			
+			} else {
+				menuToggle.classList.add('active');
+			    mobileMenu.classList.add('active');
+				bodyEl.classList.add('lock');
+				
+			}
+		});
+		mobileMenu.addEventListener('click', (e)=>{
+			
+				mobileMenu.classList.remove('active');
+				menuToggle.classList.remove('active');
+				bodyEl.classList.remove('lock');
+				
+			
+		});
+		function checkScreenSize() {
+			if (window.innerWidth > 1023) {
+				bodyEl.classList.remove('lock');
+				resetActiveMenu();
+			}
+		}
+		// Проверка размера экрана при загрузке страницы
+		checkScreenSize();
 
+		// Проверка размера экрана при изменении размера окна
+		window.addEventListener('resize', checkScreenSize);
+	}
+	/*======skiders====== */
 	var reportSlider = new Swiper('.report-swiper', {
 		spaceBetween:20,
-		speed:1000,
-		
+		speed:1500,
+		loop:true,
 		 navigation: {
 			nextEl: ".report-next",
 			prevEl: ".report-prev",
+		},
+		autoplay:{
+			delay: 2500,
+			disableOnInteraction: false,
 		},
 		breakpoints: {
 			768: {
@@ -18,20 +64,47 @@ document.addEventListener("DOMContentLoaded", function (){
 			
 			spaceBetween: 140,
 			},
-		}
+		},
+		on: {
+			init() {
+			this.el.addEventListener('mouseenter', () => {
+				this.autoplay.stop();
+			});
+
+			this.el.addEventListener('mouseleave', () => {
+				this.autoplay.start();
+			});
+			}
+		},
 	});
 	var reviewSlider = new Swiper('.reviews-swiper',{
 		spaceBetween:20,
-		speed:1000,
-		
+		speed:1500,
+		loop:true,
 		 navigation: {
 			nextEl: ".reviews-next",
 			prevEl: ".reviews-prev",
 		},
 		breakpoints: {
 			768: {spaceBetween: 0,}
+		},
+		autoplay:{
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		on: {
+		init() {
+		this.el.addEventListener('mouseenter', () => {
+			this.autoplay.stop();
+		});
+
+		this.el.addEventListener('mouseleave', () => {
+			this.autoplay.start();
+		});
 		}
-	})
+	},
+	});
+	
 	/*===========Accordion=============*/
 	;(function ($, window, document, undefined) {
 	"use strict";
@@ -124,5 +197,13 @@ document.addEventListener("DOMContentLoaded", function (){
 			}
 		});
 	});
-
+	const backTopBtn = document.getElementById('backtop');
+    window.addEventListener('scroll', ()=>{
+		if(window.scrollY > 600){
+			backTopBtn.classList.add('active');
+			
+		}else{
+			backTopBtn.classList.remove('active');
+		}
+	});
 });
