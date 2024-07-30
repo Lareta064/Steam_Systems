@@ -26,6 +26,7 @@
 		justify-content: flex-end;
 		transition: .3s; 
 		transform: translateX(110%);
+		z-index: 4;
 		.header-menu{
 			width: 100%;
 			max-width: 380px;

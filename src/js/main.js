@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function (){
 			
 		});
 		function checkScreenSize() {
-			if (window.innerWidth > 1023) {
+			if (window.innerWidth > 1279) {
 				bodyEl.classList.remove('lock');
 				resetActiveMenu();
 			}

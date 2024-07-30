@@ -9,8 +9,8 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
 		//====favicon ======
 		link(rel="apple-touch-icon", sizes="180x180", href="./favicon/apple-touch-icon.webp")
-		link(rel="icon", type="image/webp", sizes="32x32", href="./favicon/favicon-32x32.webp")
-		link(rel="icon", type="image/webp", sizes="16x16", href="./favicon/favicon-16x16.webp")
+		link(rel="icon", type="image/png", sizes="32x32", href="./favicon/favicon-32x32.png")
+		link(rel="icon", type="image/png", sizes="16x16", href="./favicon/favicon-16x16.png")
 		link(rel="manifest", href="./favicon/site.webmanifest")
 		link(rel="mask-icon", href="./favicon/safari-pinned-tab.svg", color="#5bbad5")
 		link(rel="shortcut icon", href="./favicon/favicon.ico")
@@ -20,8 +20,7 @@ html(lang="ru")
 		//====убрать перевод цифр в номер телефона на ios  ======
 		meta(name="format-detection" content="telephone=no")
 		
-		//======= swiper slider ======
-		link(rel="stylesheet", href="./libs/swiper/swiper.min.css")
+		
 		
 		//-============ fancybox =============
 		//- link(rel="stylesheet", href="./libs/fancybox/fancybox.css")
@@ -58,90 +57,162 @@ html(lang="ru")
 				font-style: normal;
 				font-display: swap;
 			}
-			.header{
-				padding-block:21px 20px;
+			/*стили первого экрана, для ускорения загрузки страницы*/
+			.header {
+				padding-block: 21px 20px;
 				width: 100%;
-				
-				&-container{
-					height: 100%;
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-					width:min(1440px, 100%);
 				}
-				.contacts-group{
-					@media (max-width: 767px) {
-					display: none;
-					}
+
+				.header-container {
+				height: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+				width: min(1440px, 100%);
 				}
-			}
-			.logo-wrapper{
+
+				.header .contacts-group .btn {
+				min-width: unset;
+				}
+
+				.logo-wrapper {
+				-webkit-box-align: start;
+				-ms-flex-align: start;
 				align-items: flex-start;
-				column-gap:8px;
-			}
-			.logo-block{
-				p{
-					font-weight: 500;
-					font-size: 9px;
-					line-height: 1;
-					letter-spacing: 0.01em;
-					text-transform: uppercase;
-					color: var(--black)
+				-webkit-column-gap: 8px;
+				-moz-column-gap: 8px;
+				column-gap: 8px;
 				}
-			}
-			.contact-link{
+
+				.logo-block p {
+				font-weight: 500;
+				font-size: 9px;
+				line-height: 1;
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: var(--black);
+				}
+
+				.contact-link {
 				white-space: nowrap;
 				font-weight: 700;
 				line-height: 1;
 				color: var(--black);
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
 				align-items: center;
-				svg{
-					flex-shrink: 0;
 				}
-			}
-			.contacts-group{
+
+				.contact-link svg {
+				-ms-flex-negative: 0;
+				flex-shrink: 0;
+				}
+
+				.contacts-group {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
 				flex-direction: column;
-				row-gap:10px;
-			}
-			.hero{
+				row-gap: 10px;
+				}
+
+				.hero {
 				padding-top: 70px;
 				padding-bottom: 56px;
 				min-height: 560px;
-				background-color: rgba(49, 128, 221, .5);
-				background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.99) 20%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, #fff 100%), url(./img/header.webp);
+				background-image: url(./img/header.webp);
 				background-repeat: no-repeat;
 				background-size: cover;
-				background-position: bottom right;
-				.h1{margin-bottom: 5px;}
-				.hero-title, .hero-desck {max-width: 500px; margin-bottom: 40px;}
-				.hero-desck	{
-					margin-bottom: 75px; max-width: 425px;
-					font-size: 18px;
-					line-height: 1.4;
-					color: var(--paragraph-color);
+				background-position: 0 bottom;
+				position: relative;
 				}
-				.btn{max-width: 425px;}
+
+				.hero .container {
+				position: relative;
+				z-index: 2;
+				}
+
+				.hero .h1 {
+				margin-bottom: 5px;
+				}
+
+				.hero .hero-title,
+				.hero .hero-desck {
+				max-width: 500px;
+				margin-bottom: 40px;
+				}
+
+				.hero .hero-desck {
+				margin-bottom: 75px;
+				max-width: 425px;
+				font-size: 18px;
+				line-height: 1.4;
+				color: var(--paragraph-color);
+				}
+
+				.hero .btn {
+				max-width: 425px;
+				}
+
+				.hero:before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				bottom: -1px;
+				background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.99) 20%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, #fff 100%);
+				z-index: 1;
+				}
 
 				@media (max-width: 1199px) {
+				.hero {
 					min-height: 717px;
-					background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.99) 20%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, #fff 100%), url(./img/header-w768.webp);
-					.h1,.h1-bold{font-size: 40px;}
+					background-image: url(./img/header-w768.webp);
+					background-position: bottom;
 				}
+
+				.hero .h1,
+				.hero .h1-bold {
+					font-size: 40px;
+				}
+				}
+
 				@media (max-width: 767px) {
-					min-height: unset;
-					height: calc(100dvh - 100px);
-					padding-top: 35px;
-					background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #fff 100%), url(./img/header-w375.webp);
-					.hero-desck{
-						margin-bottom: 50px;
-						font-size: 15px;
-					}
-					
-					.h1,.h1-bold{font-size: 25px;}
+				.header .contacts-group {
+					display: none;
 				}
-			}
+
+				.hero {
+					min-height: unset;
+					
+					height: calc(100vh - 150px);
+					padding-top: 35px;
+					background-image: url(./img/header-w375.webp);
+				}
+
+				.hero .hero-desck {
+					margin-bottom: 50px;
+					font-size: 15px;
+				}
+
+				.hero .h1,
+				.hero .h1-bold {
+					font-size: 25px;
+				}
+				}
+		//======= swiper slider ======
+		link(rel="stylesheet", href="./libs/swiper/swiper.min.css")
 		//======= main styles ======
 		link(rel="stylesheet", href="./css/main.css")
 			

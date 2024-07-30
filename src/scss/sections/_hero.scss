@@ -2,8 +2,8 @@
 	padding-top: 70px;
 	padding-bottom: 56px;
 	min-height: 560px;
-	background-color: rgba(49, 128, 221, .5);
-	background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.99) 20%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, #fff 100%), url(../img/header.webp);
+	background-color: rgba(49, 128, 221, .2);
+	// background-image:  url(../img/header.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom right;
@@ -19,7 +19,7 @@
 
 	@media (max-width: 1199px) {
 		min-height: 717px;
-		background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.99) 20%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, #fff 100%), url(../img/header-w768.webp);
+		// background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.99) 20%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, #fff 100%), url(../img/header-w768.webp);
 		.h1,.h1-bold{font-size: 40px;}
 	}
 	@media (max-width: 767px) {
@@ -27,7 +27,7 @@
 		height: calc(100dvh - 100px);
 		height: calc(100vh - 150px);
 		padding-top: 35px;
-		background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #fff 100%), url(../img/header-w375.webp);
+		// background-image: linear-gradient(92deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #fff 100%), url(../img/header-w375.webp);
 		.hero-desck{
 			margin-bottom: 50px;
 			font-size: 15px;
