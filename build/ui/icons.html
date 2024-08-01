@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--====убрать синий цвет у ссылок в сафари ========-->
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>UI-KIT</title>
+</head>
+
+<body class="body-dashboard">
+  <div class="ui-panel">
+    <div class="ui-panel-block">
+      <div class="ui-panel-block__part">
+        <a class="back-index" href="http://localhost:3000/">На Главную</a>
+        <h3>Базовые компоненты</h3>
+        <ul>
+          <li>
+            <a href="colors.html">Цветовая схема</a>
+          </li>
+          <li>
+            <a href="grid.html">Grid </a>
+          </li>
+          <li>
+            <a href="typography.html">Типографика</a>
+          </li>
+          <li>
+            <a href="positions-classes.html">Классы</a>
+          </li>
+          <li>
+            <a href="icons.html">Иконки</a>
+          </li>
+          <li>
+            <a href="buttons.html">Кнопки</a>
+          </li>
+          <li>
+            <a href="forms.html">Форма</a>
+          </li>
+          <li>
+            <a href="components.html">Компоненты</a>
+          </li>
+          <li>
+            <a href="product-card.html">Карточка продукта</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ui-panel-block__part">
+        <h3>Блоки</h3>
+        <ul>
+          <li>
+            <a href="benefits.html">Преимущества</a>
+          </li>
+          <li>
+            <a href="comparison-table.html">Таблица сравнения диагностики</a>
+          </li>
+          <li>
+            <a href="#!">Блок</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ui-panel-block__part">
+        <h3>Секции</h3>
+        <ul>
+          <li>
+            <a href="#!">Секции</a>
+          </li>
+          <li>
+            <a href="#!">Секции</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ui-panel-block__part">
+        <h3>Страницы </h3>
+      </div>
+    </div>
+  </div>
+  <div class="container-dashboard">
+    <h2>Иконки</h2>
+    <div class="container-dashboard__content">
+      <ul>
+        <li>
+          <h3>Миксин svg иконки из спрайта</h3>
+          <pre>mixin svg-icon-ui(icon)
+	svg(class="svg-"+ ic)ATattributes(attributes)
+		use(href='./img/sprite.svg#svg-'+ ic)</pre>
+        </li>
+        <li>
+          <svg class="svg-logo">
+            <use href="../img/sprite.svg#svg-logo"></use>
+          </svg>
+          <pre>+svg-icon-ui('logo')</pre>
+        </li>
+        <li>
+          <svg class="svg-phone">
+            <use href="../img/sprite.svg#svg-phone"></use>
+          </svg>
+          <pre>+svg-icon('phone')</pre>
+        </li>
+        <li>
+          <svg class="svg-hands">
+            <use href="../img/sprite.svg#svg-hands"></use>
+          </svg>
+          <pre>+svg-icon('hands')</pre>
+        </li>
+        <li>
+          <svg class="svg-cubs">
+            <use href="../img/sprite.svg#svg-cubs"></use>
+          </svg>
+          <pre>+svg-icon('cubs')</pre>
+        </li>
+        <li>
+          <svg class="svg-chart">
+            <use href="../img/sprite.svg#svg-chart"></use>
+          </svg>
+          <pre>+svg-icon('chart')</pre>
+        </li>
+        <li>
+          <svg class="svg-doc">
+            <use href="../img/sprite.svg#svg-doc"></use>
+          </svg>
+          <pre>+svg-icon('doc')</pre>
+        </li>
+        <li>
+          <svg class="svg-minus">
+            <use href="../img/sprite.svg#svg-minus"></use>
+          </svg>
+          <pre>+svg-icon('minus')</pre>
+        </li>
+        <li>
+          <svg class="svg-plus">
+            <use href="../img/sprite.svg#svg-plus"></use>
+          </svg>
+          <pre>+svg-icon('plus')</pre>
+        </li>
+        <li>
+          <svg class="svg-brand">
+            <use href="../img/sprite.svg#svg-brand"></use>
+          </svg>
+          <pre>+svg-icon('brand')</pre>
+        </li>
+        <li>
+          <svg class="svg-chevron-down">
+            <use href="../img/sprite.svg#svg-chevron-down"></use>
+          </svg>
+          <pre>+svg-icon('chevron-down')</pre>
+        </li>
+        <li>
+          <svg class="svg-chevron-up">
+            <use href="../img/sprite.svg#svg-chevron-up"></use>
+          </svg>
+          <pre>+svg-icon('chevron-up')</pre>
+        </li>
+        <li>
+          <svg class="svg-chevron-left">
+            <use href="../img/sprite.svg#svg-chevron-left"></use>
+          </svg>
+          <pre>+svg-icon('chevron-left')</pre>
+        </li>
+        <li>
+          <svg class="svg-chevron-right">
+            <use href="../img/sprite.svg#svg-chevron-right"></use>
+          </svg>
+          <pre>+svg-icon('chevron-right')</pre>
+        </li>
+        <li>
+          <svg class="svg-tools">
+            <use href="../img/sprite.svg#svg-tools"></use>
+          </svg>
+          <pre>+svg-icon('tools')
+</pre>
+        </li>
+        <li>
+          <svg class="svg-shield">
+            <use href="../img/sprite.svg#svg-shield"></use>
+          </svg>
+          <pre>+svg-icon('shield')</pre>
+        </li>
+        <li>
+          <svg class="svg-filters">
+            <use href="../img/sprite.svg#svg-filters"></use>
+          </svg>
+          <pre>+svg-icon('filters')</pre>
+        </li>
+        <li>
+          <svg class="svg-requisites">
+            <use href="../img/sprite.svg#svg-requisites"></use>
+          </svg>
+          <pre>+svg-icon('requisites')
+</pre>
+        </li>
+        <li>
+          <svg class="svg-envelope">
+            <use href="../img/sprite.svg#svg-envelope"></use>
+          </svg>
+          <pre>+svg-icon('envelope')</pre>
+        </li>
+        <li>
+          <svg class="svg-pin">
+            <use href="../img/sprite.svg#svg-pin"></use>
+          </svg>
+          <pre>+svg-icon('pin')</pre>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

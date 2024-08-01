@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--====убрать синий цвет у ссылок в сафари ========-->
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>UI-KIT</title>
+</head>
+
+<body class="body-dashboard">
+  <div class="ui-panel">
+    <div class="ui-panel-block">
+      <div class="ui-panel-block__part">
+        <a class="back-index" href="http://localhost:3000/">На Главную</a>
+        <h3>Базовые компоненты</h3>
+        <ul>
+          <li>
+            <a href="colors.html">Цветовая схема</a>
+          </li>
+          <li>
+            <a href="grid.html">Grid </a>
+          </li>
+          <li>
+            <a href="typography.html">Типографика</a>
+          </li>
+          <li>
+            <a href="positions-classes.html">Классы</a>
+          </li>
+          <li>
+            <a href="icons.html">Иконки</a>
+          </li>
+          <li>
+            <a href="buttons.html">Кнопки</a>
+          </li>
+          <li>
+            <a href="forms.html">Форма</a>
+          </li>
+          <li>
+            <a href="components.html">Компоненты</a>
+          </li>
+          <li>
+            <a href="product-card.html">Карточка продукта</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ui-panel-block__part">
+        <h3>Блоки</h3>
+        <ul>
+          <li>
+            <a href="benefits.html">Преимущества</a>
+          </li>
+          <li>
+            <a href="comparison-table.html">Таблица сравнения диагностики</a>
+          </li>
+          <li>
+            <a href="#!">Блок</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ui-panel-block__part">
+        <h3>Секции</h3>
+        <ul>
+          <li>
+            <a href="#!">Секции</a>
+          </li>
+          <li>
+            <a href="#!">Секции</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ui-panel-block__part">
+        <h3>Страницы </h3>
+      </div>
+    </div>
+  </div>
+  <div class="container-dashboard">
+    <h2>Компоненты</h2>
+    <div class="container-dashboard__content">
+      <ul class="ui-components">
+        <li>Lorem ipsum dolor sit amet </li>
+        <li>Lorem ipsum dolor sit amet </li>
+        <li>Lorem ipsum dolor sit amet </li>
+        <li>Lorem ipsum dolor sit amet </li>
+      </ul>
+      <hr />
+      <div class="prime-bg" style="padding:40px">
+        <ul>
+          <li>Lorem ipsum dolor sit amet </li>
+          <li>Lorem ipsum dolor sit amet </li>
+          <li>Lorem ipsum dolor sit amet </li>
+          <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+      </div>
+      <hr />
+      <h3>Блок с тенью .shadow-card</h3>
+      <div class="shadow-card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <hr />
+      <h3>Текст + картинка</h3>
+      <div class="picture-cards">
+        <!--=======single card ====-->
+        <div class="picture-card">
+          <div class="picture-card__img">
+            <picture>
+              <source srcset="../img/img2-w375.webp" media="(max-width: 767px)" width="340" height="530" type="image/webp" />
+              <source srcset="../img/img2-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" type="image/webp" width="340" height="530" />
+              <source srcset="../img/img2@2x.webp" media="(min-resolution: 192dpi)" width="737" height="530" type="image/webp" />
+              <img class="lazy img-cover" src="../img/img2.webp" width="737" height="530" alt="image" />
+            </picture>
+          </div>
+          <div class="picture-card__info">
+            <div class="h3">Специалисты, которые проводят обследование ваших конденсатоотводчиков</div>
+            <ul>
+              <li>Обладают глубокими знаниями об арматуре пароконденсатных систем</li>
+              <li>Точно знают варианты применения всех типов конденсатоотводчиков</li>
+              <li>Прошли обучение по использованию системы TRAPMAN® TM5 на заводе TLV.</li>
+            </ul>
+          </div>
+        </div>
+        <!--=======single card ====-->
+        <div class="picture-card">
+          <div class="picture-card__img">
+            <picture>
+              <source srcset="../img/img3-w375.webp" media="(max-width: 767px)" width="340" height="530" type="image/webp" />
+              <source srcset="../img/img3-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" type="image/webp" width="340" height="530" />
+              <source srcset="../img/img3@2x.webp" media="(min-resolution: 192dpi)" width="737" height="530" type="image/webp" />
+              <img class="lazy img-cover" src="../img/img3.webp" width="737" height="530" alt="image" />
+            </picture>
+          </div>
+          <div class="picture-card__info">
+            <div class="h3">Вы получите экспертные рекомендации, которые помогут вашему предприятию</div>
+            <ul>
+              <li>Улучшить технологические процессы</li>
+              <li>Исключить производственный брак</li>
+              <li>Повысить качество продукции.</li>
+            </ul>
+          </div>
+        </div>
+        <!--======.card-icon =====-->
+        <h3>компонент иконка + текст</h3>
+        <div class="card-icon">
+          <div class="card-icon__img">
+            <svg class="svg-cubs">
+              <use href="../img/sprite.svg#svg-cubs"></use>
+            </svg>
+          </div>
+          <div class="card-icon__text">
+            <div class="h3">1. Постановка и обсуждение задачи</div>
+            <p>Вы нам звоните +7 (812) 602-77-70 или заполняете небольшой опросный лист (занимает 3-5 минут). В течение 1 часа наш специалист с вами связывается,чтобы ответить на вопросы, обсудить условия  и договориться о встрече на вашем объекте</p>
+          </div>
+        </div>
+        <div class="card-icon">
+          <div class="card-icon__img">
+            <svg class="svg-cubs">
+              <use href="../img/sprite.svg#svg-cubs"></use>
+            </svg>
+          </div>
+          <div class="card-icon__text">
+            <div class="h3">1. Постановка и обсуждение задачи</div>
+            <p>Вы нам звоните +7 (812) 602-77-70 или заполняете небольшой опросный лист (занимает 3-5 минут). В течение 1 часа наш специалист с вами связывается,чтобы ответить на вопросы, обсудить условия  и договориться о встрече на вашем объекте</p>
+            <ul class="special-list">
+              <li>определяют расположение всех конденсатоотводчиков в заданной области</li>
+              <li>маркируют их индивидуальным номером с кодом области</li>
+              <li>наносят на корпус конденсатоотводчика и в лист учёта маркировку, которая содержит:
+                <ul>
+                  <li>Индивидуальный номер</li>
+                  <li>Номер модели</li>
+                  <li>Тип конденсатоотводчика</li>
+                  <li>Область применения</li>
+                  <li>Параметры пара</li>
+                  <li>Расчётную конденсатную нагрузку</li>
+                  <li>Противодавление</li>
+                  <li>Другие данные</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
