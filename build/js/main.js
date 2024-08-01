@@ -104,7 +104,41 @@ document.addEventListener("DOMContentLoaded", function (){
 		}
 	},
 	});
-	
+	//======= modal wrapper ========
+	const modals = document.querySelectorAll('.modal-wrapper');
+	if(modals.length > 0){
+		const modalOpenButtons = document.querySelectorAll('[data-target]');
+		const modalCloseButtons = document.querySelectorAll('[data-role]');
+		for(let item of modalOpenButtons){
+			
+			item.addEventListener('click', (e)=>{
+				const itemDataValue = item.getAttribute('data-target');
+				for(let modalItem of modals ){
+					const modalItemData = modalItem.getAttribute('data-modal');
+					if(modalItemData == itemDataValue){
+						modalItem.classList.add('active');
+						bodyEl.classList.add('lock');
+					}
+				}
+			});
+			
+		}
+		for(let modalClose of modalCloseButtons){
+			modalClose.addEventListener('click', (e)=>{
+				modalClose.closest('.modal-wrapper').classList.remove('active');
+				bodyEl.classList.remove('lock');
+			});
+		}
+		for(let modal of modals){
+			
+			modal.addEventListener('click', (e)=>{
+				if(e.target == e.currentTarget){
+					modal.classList.remove('active');
+					bodyEl.classList.remove('lock');
+				}
+			});
+		}
+	}
 	/*===========Accordion=============*/
 	;(function ($, window, document, undefined) {
 	"use strict";

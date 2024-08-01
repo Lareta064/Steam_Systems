@@ -1,0 +1,21 @@
+.modal-wrapper.modal-wrapper--scroll(data-modal="modal-form")
+	.modal-body
+		//===btn close popup ===
+		button(type="button" data-role="modal-close").btn-close
+			svg.svg-close
+				use(href='./img/sprite.svg#svg-close')
+		.modal-form
+			.title-center
+				.h2.mb-10 Обратный звонок
+				p Представьтесь, мы вам перезвоним!
+			form.contact-form(action="#")
+				.form-item
+					input(type="text" name="" placeholder="Имя*")
+				.form-item
+					input(type="text" name="" placeholder="Фамилия")
+				.form-item
+					textarea(type="text" name="" placeholder="Комментарий")
+				.form-item
+					input(type="text" name="" placeholder="Телефон")
+				.form-btn
+					+btn('Отправить', "submit", 'w-100')

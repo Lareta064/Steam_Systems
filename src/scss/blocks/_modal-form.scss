@@ -1,0 +1,76 @@
+.modal-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	height: 100%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 12;
+	display: none;
+	
+	&.active {
+		display: flex;
+	}
+
+	.modal-body {
+		position: relative;
+		width: min(800px, 100%);
+		padding: 60px;
+		background: var(--white);
+		overflow: hidden;
+		overflow-y: auto;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		.btn-close{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 40px;
+			height: 40px;
+			svg{
+				width: 30px;
+				height: 30px;
+			}
+		}		
+		@media (max-width: 1023px) {
+			padding: 60px 40px;
+		}
+		@media (max-width: 767px) {
+			padding:40px 16px;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			&>*{width: 100%;}
+			.btn-close{
+				width: 40px;
+				height: 40px;
+			}
+			.btn-close{
+				top: 20px;
+				right: 10px;
+				
+
+			}
+		}
+	}
+
+}
+.modal-wrapper--scroll {
+	padding-block: 40px;
+	align-items: flex-start;
+	height: 100%;
+	overflow-y: auto;
+
+	@media (max-width: 767px) {
+		padding-block: 0;
+
+	}
+}
